@@ -1,0 +1,86 @@
+body{
+	/*Permet d'annuler un comportement par défaut qui me dérange*/
+	margin: 0;
+	padding: 0;
+	/*Tous les textes contenus dans la balise body sera Roboto ou si le navigateur ne la trouve pas : sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+/*J'alligne au centre tous les textes*/
+section, header{
+	text-align: center;
+}
+	/*Permet d'annuler un comportement par défaut qui me dérange*/
+a{
+	color: black;
+	text-decoration: none;
+}
+/*Lorsque je survole le lien la couleur du lien devient darkblue au lieu de noir*/
+a:hover{
+	color: darkblue;
+}
+/*Je définis la taille de la police pour les balises h2 et j'enlève le bold*/
+h2{
+	font-size: 12px;
+	font-weight: normal;
+}
+/*Ici je définis la taille des images, et j'applique une marge en bas pour éviter que l'image ne soit collée au reste
+div.img img => s'applique sur toutes les balises img contenues dans un conteneur div possédant la classe img
+figure img => s'applique sur toutes les balises img contenues dans un conteneur figure
+*/
+div.img img, figure img{
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+/*Je veux la section possédant l'id avecDiv*/
+section#avecDiv{
+	/*Je défini la largeur de ma section*/
+	width: 800px;
+	/*Permet de centrer l'élément */
+	margin: 0 auto;
+	/*Permet de d'aligner les blocs comme il faut*/
+	display: flex;
+	justify-content: space-around;
+}
+
+footer{
+	/*j'applique une couleur de fond*/
+	background-color: #676767;
+	/*tout le contenu sera aligné à droite*/
+	text-align: right;
+	/*la couleur du texte sera blanc*/
+	color: white;
+	/*je met un espace de 10px entre la bordure et le contenu de chaque côté*/
+	padding: 10px;
+	/*Permet de prendre en compte le contenu + padding + border dans width*/
+	box-sizing: border-box;
+	/*Permet de positionner mon footer*/
+	position: absolute;
+	/*commence à 0% de la hauteur totale en commençant par le bas*/
+	bottom: 0%;
+	/*Largeur 100% de l'écran*/
+	width: 100%;
+}
+/*permet d'appliquer un style particulier au sein même du footer */
+footer div{
+	/*texte aligné à gauche*/
+	text-align: left;
+	/*esapce de 20px de chaque côté*/
+	padding: 20px;
+	/*Sauf à gauche ou l'espacement est de 80% de la page*/
+	padding-left:80%;
+	/*Couleur gris claire*/
+	color : #aaaaaa;
+	/*police en gras*/
+	font-weight: bold;
+
+}
+
+figure img{
+	border: 1px solid red;
+}
+
+figure{
+	/*permet d'aligner les conteneurs avec les images de manière horizontale*/
+	display: inline-block;
+}
