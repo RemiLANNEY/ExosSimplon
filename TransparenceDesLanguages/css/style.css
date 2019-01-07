@@ -1,0 +1,30 @@
+
+h1, h2{
+	color: Darkblue;
+	text-align: center;
+}
+
+section{
+	text-align: center;
+}
+section:nth-child(n+3){
+	width: 30%;
+	float: left;
+	height: 400px;
+}
+img{
+	width: 200px;
+}
+#css img:hover{
+	width: 300px;
+	transform: translate(100px, -10px);
+	border-radius: 50%;
+}
+
+#jQuerySection div{
+	position: relative;
+}
+#jQuery{
+	position: absolute;
+	left: calc(50% - 100px);
+}

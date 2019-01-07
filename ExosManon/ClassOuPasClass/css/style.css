@@ -1,0 +1,31 @@
+#wrapper{
+	width: 720px;
+	height: 720px;
+	margin: 0 auto;
+}
+.carre, .cercle, .losange{
+	box-sizing: border-box;
+	border: 1px solid grey;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.cercle{
+	border-radius: 50%;
+}
+.losange{
+	transform: rotate(45deg);
+}
+
+.full{
+	background-color: #819FF7;
+}
+
+#btn{
+	width: 720px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
