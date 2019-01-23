@@ -1,4 +1,6 @@
 $(window).on("load", function(){
+	
+
 	$(".cercle").each(function(){
 		$(this).on("click", function(){
 			$(this).toggleClass('full');
@@ -20,6 +22,7 @@ $(window).on("load", function(){
 	$(".losange").each(function(){
 		$(this).on("click", function(){
 			var classList = $(this).attr('class').split(/\s+/);
+			console.log(classList[2]);
 			if($(this).hasClass("full")){
 				$("."+classList[2]+", ."+classList[1]).removeClass("full");
 			} else {
@@ -31,6 +34,7 @@ $(window).on("load", function(){
 	$("#selectAll").on("click", function(){
 		$("#wrapper div").addClass("full");
 	});
+
 	$("#DeselectAll").on("click", function(){
 		$("#wrapper div").removeClass("full");
 	});

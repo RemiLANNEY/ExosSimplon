@@ -9,17 +9,16 @@
 	    			mouseenter:function(){
 	    			$(this).removeClass("vert").addClass("bleu");
 	    			//quand la souris sort, cet element se voit retiré la classe bleu et ajouté la vert
-	    			},
-	    			mouseleave:function(){
+	    		},mouseleave:function(){
 	    			$(this).removeClass("bleu").addClass("vert");}
 	    		});
 
 	    	// Correction alternative
-	    		// $("#bloc1").hover(function(){
-	    		// 	$(this).removeClass("vert").addClass("bleu");	    			
-	    		// },function(){
-	    		// 	$(this).removeClass("bleu").addClass("vert");
-	    		// })
+	    		$("#bloc1").hover(function(){
+	    			$(this).removeClass("vert").addClass("bleu");	    			
+	    		},function(){
+	    			$(this).removeClass("bleu").addClass("vert");
+	    		})
 
 	    	// Correction exo2
 	    		//Quand une touche est relevée, le texte du para1 se voit attribué le contenu du champ1
