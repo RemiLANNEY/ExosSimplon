@@ -1,0 +1,986 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 18px;
+    color:#041724;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, html{
+    overflow-x:hidden;
+}
+
+/* style liens 
+---------------------------------------------------------*/
+a {
+    color: #4bb5ff;
+}
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    outline: none;
+    color: #075f04;
+    text-decoration: none;
+}
+
+
+/* Navigation contôle
+-------------------------------------------------------- */
+.navbar a,
+.form-control {
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	   -moz-transition: all 0.4s ease-in-out 0s;
+		-ms-transition: all 0.4s ease-in-out 0s;
+		 -o-transition: all 0.4s ease-in-out 0s;
+			transition: all 0.4s ease-in-out 0s;
+}
+
+a,
+.btn {
+	-webkit-transition: all 0.125s ease-in-out 0s;
+	   -moz-transition: all 0.125s ease-in-out 0s;
+		-ms-transition: all 0.125s ease-in-out 0s;
+		 -o-transition: all 0.125s ease-in-out 0s;
+			transition: all 0.125s ease-in-out 0s;
+}
+
+
+/* === typographie === */
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    margin:0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+
+
+/* === FORM STYLE === */
+.form-control {
+    height: 45px;
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #68c3a3;
+    box-shadow: none;
+}
+
+
+/* Alert Style
+-----------------------------------------------------*/
+.alert {
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.alert strong {
+  display: inline-block;
+  margin: 0;
+}
+
+
+
+/* BUTTON STYLE
+-----------------------------------------------------*/
+/*common-btn*/
+.btn{
+    border: 0;
+    border-bottom: 3px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 9px 22px;
+}
+
+/*large-btn*/
+.btn-lg,
+.btn-group-lg>.btn {
+    padding: 14px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/*btn-primary*/
+.btn-primary{
+    background-color:#4bb5ff;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #075f04;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+/*btn-info*/
+.btn-info{
+    background-color:#4bb5ff;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info:active,
+.btn-info.active,
+.open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #075f04;
+    border-color: #075f04;
+}
+
+/*btn-default*/
+.btn-default {
+    background-color: : #075f04;
+    border: 1px solid #075f04;
+    color: #fff;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active{
+    color: #075f04;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+/*IMAGES*/
+img {
+    width: 100%;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/* LIST STYLE
+-------------------------------------------------- */
+ul, ol {
+    margin     : 0;
+    padding    : 0;
+    list-style : none
+}
+
+
+ul.list-check {
+
+}
+
+ul.list-check li{
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+}
+ul.list-check li::before {
+    content: "\f00c";
+    font-family: 'fontawesome';
+    color: #68c3a3;
+    margin-right: 10px;
+}
+
+
+/* === MAIN === */
+.section-padding {
+	padding: 120px 0 100px;
+}
+
+
+/* SECTION TITLE
+----------------------------------------------------- */
+.section-title {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    color: #2c3e50;
+    position: relative;
+    
+}
+
+.section-title::after {
+    content: "";
+    background: url(../../assets/images/section-divider.png) no-repeat 0 0;
+    height: 15px;
+    width: 113px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin: 0 auto;
+    font-family: 'MavenPro' sans-serif;
+}
+
+
+
+/* === HOME === */
+
+
+
+
+
+/*
+SOCIAL ICON
+-------------------------------------------*/
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a i{
+    position: relative;
+    color: #041724;
+    font-size: 18px;
+    margin: 0 7px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons a i::before {
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons a i::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+         -o-transition: all 300ms;
+            transition: all 300ms;
+}
+
+.social-icons a i:hover::after{
+    background: #075f04;
+    border: 1px solid transparent;
+    z-index: 0;
+}
+
+
+/* === NAVIGATION === */
+.header {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    width: 100%;
+    z-index: 998;
+    padding-bottom: 1px;
+    background-color: #4bb5ff;
+    font-family: 'MavenPro' sans-serif;
+}
+
+
+
+.navbar-custom {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'MavenPro', sans-serif;
+}
+
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+    background: #4bb5ff;
+    padding: 0;
+}
+
+.navbar-custom ul li a span{
+    margin-left:5px;
+}
+
+.navbar-custom .dropdown-menu {
+    margin-top:10px;
+    display: block;
+    visibility: hidden;
+    opacity:0;
+    border: 1px solid #ddd;
+    border-top: 2px solid #68c3a3;
+    border-radius: 0;
+    border-bottom: 3px double #ddd;
+    background-color: #FFFFFF;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition:all 400ms;
+}
+
+.navbar-left .dropdown-menu {
+  right: : auto;
+  left: : 0;
+}
+.navbar-custom .navbar-nav > li:hover .dropdown-menu{
+    display: block;
+    opacity:1;
+    visibility: visible;
+    margin-top:-2px;
+}
+
+.navbar-custom .navbar-nav > li > a{
+    color: #041724;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-custom .dropdown-menu > li{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.navbar-custom .dropdown-menu > li:last-child{
+    border-bottom: 0;
+}
+
+.navbar-custom .dropdown-menu > li > a {
+    padding: 10px 20px;
+    color: #4bb5ff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active > a {
+   background: #075f04;
+    outline: 0;
+    color: #041724;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #222;
+}
+
+/* === Section Info=== */
+.section-title {
+    font-family: 'MavenPro', sans-serif;
+}
+
+.short-info {
+    margin-bottom: 40px;
+}
+
+.short-info h3 {
+    margin-bottom: 30px;
+}
+
+.short-info ul {
+    margin-top: 10px;
+    display:inline-block;
+}
+.short-info ul li {
+    width: 50%;
+    float: left;
+}
+
+
+.biography{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:1px solid #EEEEEE;
+    position: relative;
+}
+
+.biography:after{
+    content: "";
+    border-bottom: 1px solid #EEEEEE;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.myphoto{
+    position: relative;
+    background: url(../../assets/images/header.png) bottom center no-repeat;
+    background-size: contain;
+}
+
+.myphoto img{
+    position: relative;
+    z-index: -1;
+}
+
+.biography ul{
+    padding:25px 20px 30px;
+}
+
+.biography ul li{
+    padding:5px 0;
+    font-size: 16px;
+    border-bottom:1px solid #EEEEEE;
+}
+
+.biography ul li:last-child{
+    border-bottom:0;
+}
+
+/*---------------------------------------------------------
+DESCRIPTION - HISTORIQUE
+-----------------------------------------------------------*/
+.describe-title h2{
+    text-align: center;
+    font-family: 'MavenPro', sans-serif;
+}
+.describe-section > div > div{
+    margin-bottom: 10px;
+}
+.describe-section > div > div:nth-of-type(2){
+    margin-bottom: 0;
+}
+.describe-title{
+    margin-bottom: 10px;
+    font-family: 'MavenPro', sans-serif;
+}
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.describe{
+    position: relative;
+}
+
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #e1e1e1;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 30px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-content{
+    padding:5px 20px 0 20px;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .cible {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    left: 20px;
+}
+
+
+.timeline>li .cible .maj {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    display: block;
+    color: #041724;
+    top: 0;
+    float: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-heading h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'MavenPro', sans-serif;
+}
+.timeline-heading span{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'MavenPro', sans-serif;
+}
+
+@media(min-width:992px) {
+.timeline:before {
+    left: 50%;
+}
+
+.timeline>li {
+    margin-bottom: 15px;
+    min-height: 100px;
+}
+
+.timeline>li .cible {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+}
+
+.timeline>li .timeline-panel {
+    float: left;
+    width: 43%;
+    text-align: right;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.timeline-content{
+    position: relative;
+    padding: 24px;
+    background-color: #fff;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition: all 400ms;
+}
+
+.timeline-content::after{
+    border: 1px solid #eee;
+    width: 100%;
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    height:10px;
+    left: 0;
+    z-index: -1;
+}
+
+.timeline>li .timeline-content:hover {
+    background: #075f04;
+    color: #fff;
+}
+
+.timeline>li .timeline-panel::before,
+.timeline>li.timeline-inverted .timeline-panel::before {
+    content: "";
+    top: 25px;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline>li .timeline-panel::before {
+    left: 100%;
+    border-left: 12px solid #ECECEC;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition: all 400ms;
+}
+.timeline>li .timeline-panel:hover::before {
+    border-left: 12px solid #68c3a3;
+}
+
+.timeline>li.timeline-inverted .timeline-panel::before {
+    right: 100%;
+    border-right: 12px solid #ECECEC;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition: all 400ms;
+}
+.timeline>li.timeline-inverted .timeline-panel:hover::before {
+    border-right: 12px solid #68c3a3;
+    border-left: 0;
+}
+
+.timeline>li .timeline-panel::after,
+.timeline>li.timeline-inverted .timeline-panel::after {
+    content: "";
+    top: 25px;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline>li .timeline-panel::after {
+    left: 100%;
+    margin-left: -2px;
+    border-left: 12px solid #FFFFFF;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition: all 400ms;
+}
+.timeline>li .timeline-panel:hover::after {
+    border-left: 12px solid #68c3a3;
+}
+
+.timeline>li.timeline-inverted .timeline-panel::after {
+    right: 100%;
+    margin-right:-2px;
+    border-right: 12px solid #FFFFFF;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition: all 400ms;
+}
+.timeline>li.timeline-inverted .timeline-panel:hover::after {
+    border-right: 12px solid #68c3a3;
+    border-left: 0;
+}
+
+.timeline>li .cible {
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    margin-top: 28px;
+}
+.timeline>li .cible .maj {
+    float: none;
+}
+
+
+/* === Skill Section === */
+.skills-section {
+    background-color: #fff;
+    color: #041724;
+}
+.skills-section .section-title{
+    color: #fff;
+    margin-bottom: 110px;
+    font-family: 'MavenPro', sans-serif;
+}
+.skills-section .section-title h2{
+    color: #fff;
+    font-family: 'MavenPro', sans-serif;
+}
+.skill-title {
+    width: 25%;
+    float: left;
+    font-family: 'MavenPro', sans-serif;
+}
+.skill-title h2{
+    font-family: 'MavenPro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -6px;
+    text-transform: capitalize;
+}
+
+
+/* === Chart CSS  === */
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin: 40px auto;
+    text-align: center;
+}
+.chart canvas {
+    position:absolute;
+    top:0;
+    left:0;
+}
+.percent {
+    display: inline-block;
+    margin: auto;
+    line-height: 140px;
+    z-index: 2;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.chart-text span {
+    font-family: 'MavenPro', sans-serif;
+    font-size: 14px;
+    display: block;
+    margin-top: 2px;
+}
+
+
+/* === Work Section === */
+.works-section {
+    background-color: #f7f7f7;
+}
+.portfolio-item {
+    padding-right: 5px;
+    padding-left: 5px;
+    min-height: 235px;
+}
+.portfolio-bg{
+   background: #fff;
+   padding: 5px;
+   margin-bottom: 20px;
+   border: 1px solid #eee;
+   border-bottom: 3px double #eee;
+}
+
+
+.portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* === Contact Section === */
+.contact-section  {
+    margin-bottom: relative;
+}
+
+.contact-section strong {
+    display: block;
+    text-transform: uppercase;
+}
+.contact-form strong {
+    margin-bottom: 20px;
+
+}
+
+.contact-form textarea.form-control {
+    height: 115px;
+}
+
+.contact-form .btn {
+    margin-top: 15px;
+}
+
+.contact-section div > i{
+    float: left;
+    font-size: 45px;
+    margin-right: 20px;
+}
+.contact-section address,
+.contact-section .contact-number {
+    overflow: hidden;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 45px
+}
+
+
+/*MAP*/
+.location-map {
+    padding: 4px;
+    border: 1px solid #eee;
+    border-bottom: 3px double #eee;
+}
+.map-canvas {
+    background size: initial;
+    height: 300px;
+
+}
+
+/* === Footer Wrapper === */
+.footer-wrapper {
+    background: #4bb5ff;
+    padding: 36px 0;
+    color: #fff;
+   
+}
+.copyright p {
+    margin: 0;
+font-family: 'MavenPro', sans-serif;
+}
+
+/* ---------------------------------------------- /*
+ * Scroll to top
+/* ---------------------------------------------- */
+
+.scroll-up {
+	position: fixed;
+	display: none;
+	z-index: 999;
+	bottom: 1.8em;
+	right: 1.8em;
+}
+
+.scroll-up a {
+	background-color: #68c3a3;
+	display: block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+	background-color: rgba(235, 235, 235, .8);
+	color: #222;
+}
+
+
+/*SERVICE SECTION*/
+.service-section {
+    background-size: cover;
+    padding:120px 0;
+}
+.service-section h2 {
+    color: #fff;
+    font-family: 'MavenPro', sans-serif;
+}
+.service-wrap{
+    padding: 40px 0
+}
+
+.personal-info h1 {
+    font-family: 'MavenPro', sans-serif;
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+
+.personal-info h1 span{
+    color:#68c3a3;
+}
+.personal-info p {
+    margin-bottom: 40px;
+}
+
+
+/*GALERIE*/
+#galerie {
+    position: relative;
+    margin: auto;
+   
+    
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+ 
+#galerie ul { list-style-type: none; }
+#galerie li { margin-top: 20px; }
+
+.galerie-list img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.galerie-list li { display: inline-block; }
+
+.galerie-control {
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+

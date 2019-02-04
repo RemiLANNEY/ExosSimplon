@@ -1,0 +1,21 @@
+INSERT INTO `Users` (`Users_id`, `Users_email`, `Users_pass`, `Users_droits`) 
+VALUES 	(NULL, 'monmail1@simplon.co', 'monPassGenial1', '1'), 
+	(NULL, 'monmail2@simplon.co', 'monPassGenial2', '3'), 
+	(NULL, 'monmail3@simplon.co', 'monPassGenial3', '3'), 
+	(NULL, 'monmail4@simplon.co', 'monPassGenial4', '3'),
+	(666, 'monmail5@simplon.co', 'monPassGenial5', '3');
+
+INSERT INTO `Users` (`Users_email`, `Users_pass`, `Users_droits`) 
+VALUES 	('monmail1@simplon.co', 'monPassGenial1', '1'), 
+	('monmail2@simplon.co', 'monPassGenial2', '3'), 
+	('monmail3@simplon.co', 'monPassGenial3', '3'), 
+	('monmail4@simplon.co', 'monPassGenial4', '3'),
+	('monmail5@simplon.co', 'monPassGenial5', '3');
+
+SELECT `Users_email` FROM `Users`;
+
+SELECT * FROM `Users` WHERE `Users_id` = '3' 
+
+UPDATE `Users` SET `Users_email`= "monmail@monmail.com" WHERE `Users_id` = 3;
+
+UPDATE `Users` SET `Users_droits` = '4' WHERE `Users`.`Users_email` = "tata@toto.titi" 
